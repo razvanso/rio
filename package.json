@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/razvanso/rio/issues"
   },
-  "homepage": "https://github.com/razvanso/rio#readme"
+  "homepage": "https://github.com/razvanso/rio#readme",
+  "devDependencies": {
+    "hint": "^7.1.10"
+  }
 }
