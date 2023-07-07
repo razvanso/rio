@@ -142,8 +142,8 @@ If you like this project, please ⭐️ Star it on GitHub
 ## 🙏 Acknowledgments<a name="acknowledgements"></a>
 
 I would like to thank [Microverse](https://github.com/microverseinc) for its useful resources:
-- README template from [Microverse](https://github.com/microverseinc/readme-template)
-- Linter setup from [Microverse](https://github.com/microverseinc/linters-config/tree/master/html-css)
+- [README template](https://github.com/microverseinc/readme-template) from Microverse
+- [Linters setup](https://github.com/microverseinc/linters-config/tree/master/html-css) from Microverse
 - Based on this [beautiful design](https://www.figma.com/file/mkC0dUJBz0JnpcI4uZT3QX/Microverse-Student-Project-1-(Copy)?node-id=0%3A1), also provided by [Microverse](https://github.com/microverseinc).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
