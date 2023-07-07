@@ -90,3 +90,22 @@ h1 {
   color: #505f79;
   list-style-type: none;
 }
+
+/* BUTTON STATES */
+
+/* Generic hover effect for all links
+  adapted from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
+*/
+
+a:hover,
+a:focus {
+  transform: scale(1.15);
+}
+
+a:focus {
+  border: 1px solid #7f8cff;
+}
+
+a:active {
+  transform: scale(0.85);
+}
