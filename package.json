@@ -1,12 +1,24 @@
 {
   "name": "rio",
   "version": "1.0.0",
-  "description": "<a name=\"readme-top\"></a>",
+  "description": "Rio's Portfolio, my portfolio, which starts early, and will evolve as I become better at my software development craft.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razvanso/rio.git"
+  },
+  "keywords": [
+    "Rio",
+    "Portfolio",
+    "Linters"
+  ],
+  "author": "Rio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razvanso/rio/issues"
+  },
+  "homepage": "https://github.com/razvanso/rio#readme"
 }
