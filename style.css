@@ -59,7 +59,8 @@ a {
   left: -34px; /* accounts for the bg image positioning */
 }
 
-h1 {
+h1,
+h2 {
   color: #172b4d;
   font-size: 40px;
   line-height: 52px;
@@ -143,6 +144,10 @@ a:active {
 
 /* WORKS Section
    =========================================== */
+
+.hidden {
+  display: none;
+}
 
 .works {
   display: grid;
@@ -236,6 +241,10 @@ a:active {
 
 /* SKILLS LIST
 ============================================== */
+
+.all-skills {
+  margin-top: 10px;
+}
 
 .skill-list {
   display: flex;
