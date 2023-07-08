@@ -52,11 +52,16 @@ a {
 }
 
 .shapes-bg {
-  background: url(images/bg-shapes.svg);
+  background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
-  left: -34px; /* accounts for the bg image positioning */
+  left: -34px; /* accounts for the bg image positioning. Probably: (min-width=376px) {cover+top} */
+  border-bottom-left-radius: 90px;
+}
+
+.rounded-corner-bg {
+  background-color: #f7f7f9;
 }
 
 h1,
@@ -237,6 +242,13 @@ a:active {
   line-height: 16px;
   padding: 4px 12px;
   border-radius: 8px;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: white;
+  border-top-right-radius: 90px;
 }
 
 /* SKILLS LIST
