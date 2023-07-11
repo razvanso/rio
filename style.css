@@ -109,3 +109,8 @@ a:focus {
 a:active {
   transform: scale(0.85);
 }
+
+/* FOOTER */
+footer {
+  fill: var(--primary-b-400, #6070FF);
+}
