@@ -112,5 +112,13 @@ a:active {
 
 /* FOOTER */
 footer {
+  display: flex;
+  flex-direction: column;
   fill: var(--primary-b-400, #6070FF);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
