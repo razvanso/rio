@@ -122,3 +122,11 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+
+footer > hr {
+  border-radius: 10px;
+  background: #0D151E;
+  width: 134px;
+  height: 5px;
+  margin: 21px auto 8px;
+}
