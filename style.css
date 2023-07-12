@@ -169,6 +169,8 @@ footer button,
   line-height: 20px;
   background: var(--neutrals-n-0, #fff);
   font-family: Poppins;
+  outline: solid #fff 2px;
+  outline-offset: -1px;
 }
 
 #contact-form textarea {
