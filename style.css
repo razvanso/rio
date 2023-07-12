@@ -114,10 +114,11 @@ a:active {
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070FF url(images/bg-shapes.svg);
+  background: #6070FF url(images/contact\ form\ shapes-mobile@2x.svg);
+  background-size: 60%;
+  background-position: top 20px right 0px;
   background-repeat: no-repeat;
   /* background-size: 90%; */
-  background-position: top;
   border-top-left-radius: 90px;
   padding: 15px;
   color: var(--neutrals-n-0, #FFF);
