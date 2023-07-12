@@ -168,13 +168,14 @@ footer button,
   font-weight: 400;
   line-height: 20px;
   background: var(--neutrals-n-0, #fff);
-  font-family: Poppins;
+  font-family: 'poppins', sans-serif;
   outline: solid #fff 2px;
   outline-offset: -1px;
 }
 
 #contact-form textarea {
   min-height: 170px;
+
   /* Prevent text area from resizing horizontally */
   resize: vertical;
 }
@@ -198,7 +199,6 @@ footer button.btn {
   align-self: flex-start;
   width: unset;
   outline: unset;
-}
 }
 
 footer > hr {
@@ -227,7 +227,7 @@ footer > hr {
 .btn:hover,
 .btn:focus {
   background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
   transform: scale(1); /* Resets default link behavior */
