@@ -114,14 +114,15 @@ a:active {
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070FF url(images/contact\ form\ shapes-mobile@2x.svg);
+  background: #6070ff url(images/contact\ form\ shapes-mobile@2x.svg);
   background-size: 60%;
-  background-position: top 20px right 0px;
+  background-position: top 20px right 0;
   background-repeat: no-repeat;
+
   /* background-size: 90%; */
   border-top-left-radius: 90px;
   padding: 24px;
-  color: var(--neutrals-n-0, #FFF);
+  color: var(--neutrals-n-0, #fff);
   align-items: center;
 }
 
@@ -133,7 +134,7 @@ footer > h2 {
 }
 
 footer > p {
-  color: var(--primary-b-50, #EBEBFF);
+  color: var(--primary-b-50, #ebebff);
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -155,14 +156,14 @@ footer button,
   height: 48px;
   padding: 15px 16px;
   box-sizing: border-box;
-  color: var(--neutral-n-800, #172B4D);
+  color: var(--neutral-n-800, #172b4d);
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  background: var(--neutrals-n-0, #FFF)
+  background: var(--neutrals-n-0, #fff);
 }
 
 #contact-form textarea {
@@ -170,12 +171,12 @@ footer button,
 }
 
 footer button {
-  color: var(--primary-b-400, #6070FF);
+  color: var(--primary-b-400, #6070ff);
   text-align: center;
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: .51px;
+  letter-spacing: 0.51px;
   padding: 12px 16px;
   align-self: flex-start;
   width: unset;
@@ -183,7 +184,7 @@ footer button {
 
 footer > hr {
   border-radius: 10px;
-  background: #0D151E;
+  background: #0d151e;
   width: 134px;
   height: 5px;
   margin: 21px auto 8px;
