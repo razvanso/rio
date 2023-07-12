@@ -138,12 +138,33 @@ footer > p {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  margin-bottom: 52px;
 }
 
+/* FORM */
 #contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 327px;
+  height: 48px;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  color: var(--neutral-n-800, #172B4D);
+  border-radius: 8px;
+  border: 1px solid #CFD8DC;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#contact-form textarea {
+  height: 170px;
 }
 
 footer > hr {
