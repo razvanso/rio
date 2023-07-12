@@ -120,6 +120,12 @@ footer {
   background-position: top;
   border-top-left-radius: 90px;
   padding: 15px;
+  color: var(--neutrals-n-0, #FFF);
+  align-items: center;
+}
+
+footer > p {
+  color: var(--primary-b-50, #EBEBFF);
 }
 
 #contact-form {
