@@ -9,14 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  /* Simulate the mobile view */
-  max-width: 375px;
-  max-height: 604px;
-
-  /* end of simulated mobile view */
-}
-
 a {
   outline: none;
   border-radius: 8px;
@@ -129,6 +121,17 @@ footer {
   align-items: center;
 }
 
+footer > * {
+  max-width: 327px;
+}
+
+/* https://stackoverflow.com/questions/20175211/why-dont-textarea-and-input-elements-respect-max-width */
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
 footer > h2 {
   margin: 79px 0 12px 0;
   color: var(--neutrals-n-0, #fff);
@@ -156,7 +159,6 @@ footer > p {
 footer button,
 #contact-form input,
 #contact-form textarea {
-  width: 327px;
   height: 48px;
   padding: 15px 16px;
   box-sizing: border-box;
