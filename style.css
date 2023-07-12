@@ -201,6 +201,16 @@ footer button.btn {
   outline: unset;
 }
 
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 4px solid white;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+  outline: 2px solid white;
+}
+
 footer > hr {
   border-radius: 10px;
   background: #0d151e;
