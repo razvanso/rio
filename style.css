@@ -114,7 +114,12 @@ a:active {
 footer {
   display: flex;
   flex-direction: column;
-  fill: var(--primary-b-400, #6070FF);
+  background: #6070FF url(images/bg-shapes.svg);
+  background-repeat: no-repeat;
+  /* background-size: 90%; */
+  background-position: top;
+  border-top-left-radius: 90px;
+  padding: 15px;
 }
 
 #contact-form {
