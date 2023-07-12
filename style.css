@@ -188,12 +188,6 @@ footer button,
 }
 
 footer button.btn {
-  color: var(--primary-b-400, #6070ff);
-  text-align: center;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.51px;
   padding: 0 16px;
   margin: 0;
   align-self: flex-start;
@@ -204,11 +198,6 @@ footer button.btn {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: 4px solid white;
-}
-
-#contact-form button:hover,
-#contact-form button:focus {
-  outline: 2px solid white;
 }
 
 footer > hr {
@@ -222,7 +211,7 @@ footer > hr {
 
 .btn {
   padding: 12px;
-  border: 1px solid #6070ff;
+  border: 1px solid var(--theme-1-primary-colors-3, #7f8cff);
   box-sizing: border-box;
   border-radius: 8px;
   margin: 12px 0;
@@ -236,7 +225,7 @@ footer > hr {
 
 .btn:hover,
 .btn:focus {
-  background: #6070ff;
+  background: var(--theme-1-primary-colors-2, #6070ff);
   box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
@@ -244,12 +233,12 @@ footer > hr {
 }
 
 .btn:active {
-  background: #2230d2;
+  background: var(--theme-1-primary-colors-1, #2230d2);
 }
 
 .btn:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
+  border: 1px solid var(--theme-1-neutrals-7, #c1c7d0);
+  color: var(--theme-1-neutrals-5, #5e6c84);
 }
 
 /* WORKS Section
