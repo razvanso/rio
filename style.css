@@ -123,6 +123,10 @@ footer {
   color: var(--neutrals-n-0, #FFF);
   align-items: center;
 }
+footer >h2{
+  margin: 89px 0 12px 0;
+
+}
 
 footer > p {
   color: var(--primary-b-50, #EBEBFF);
