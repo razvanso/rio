@@ -2,3 +2,4 @@ node_modules/
 
 # Webhint's report files shouldn't be committed, as they are generated AND platform-dependent
 hint-report/
+.vscode/
