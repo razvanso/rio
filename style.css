@@ -195,6 +195,8 @@ footer button.btn {
   margin: 0;
   align-self: flex-start;
   width: unset;
+  outline: unset;
+}
 }
 
 footer > hr {
