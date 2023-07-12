@@ -174,7 +174,9 @@ footer button,
 }
 
 #contact-form textarea {
-  height: 170px;
+  min-height: 170px;
+  /* Prevent text area from resizing horizontally */
+  resize: vertical;
 }
 
 #contact-form textarea::placeholder {
