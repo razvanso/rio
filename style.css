@@ -43,10 +43,6 @@ a {
   padding: 114px 24px;
 }
 
-.headline-text {
-  max-width: 920px;/* based on the Desktop design */
-}
-
 .shapes-bg {
   background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
@@ -73,6 +69,7 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   margin: 12px 0;
+  max-width: 920px;/* based on the Desktop design */
 }
 
 /* Social Media section */
