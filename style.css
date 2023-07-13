@@ -43,6 +43,10 @@ a {
   padding: 114px 24px;
 }
 
+.headline-text {
+  max-width: 920px;/* based on the Desktop design */
+}
+
 .shapes-bg {
   background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
