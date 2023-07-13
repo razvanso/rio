@@ -5,16 +5,8 @@
 }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-}
-
-body {
-  /* Simulate the mobile view */
-  max-width: 375px;
-  max-height: 604px;
-
-  /* end of simulated mobile view */
 }
 
 a {
@@ -77,6 +69,7 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   margin: 12px 0;
+  max-width: 920px;/* based on the Desktop design */
 }
 
 /* Social Media section */
@@ -115,9 +108,113 @@ a:active {
   transform: scale(0.85);
 }
 
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #6070ff url(images/contact\ form\ shapes-mobile@2x.svg);
+  background-size: 60%;
+  background-position: top 18px right 0;
+  background-repeat: no-repeat;
+  border-top-left-radius: 80px;
+  padding: 24px 24px 0;
+  color: var(--neutrals-n-0, #fff);
+  align-items: center;
+}
+
+footer > * {
+  max-width: 447px;/* based on the Desktop design */
+}
+
+/* https://stackoverflow.com/questions/20175211/why-dont-textarea-and-input-elements-respect-max-width */
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+footer > h2 {
+  margin: 79px 0 12px 0;
+  color: var(--neutrals-n-0, #fff);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+footer > p {
+  color: var(--primary-b-50, #ebebff);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 52px;
+}
+
+/* FORM */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer button,
+#contact-form input,
+#contact-form textarea {
+  height: 48px;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  color: var(--neutral-n-800, #172b4d);
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background: var(--neutrals-n-0, #fff);
+  font-family: 'poppins', sans-serif;
+  outline: solid #fff 2px;
+  outline-offset: -1px;
+}
+
+#contact-form textarea {
+  min-height: 170px;
+
+  /* Prevent text area from resizing horizontally */
+  resize: vertical;
+}
+
+#contact-form textarea::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--neutrals-n-60, #b3bac5);
+}
+
+footer button.btn {
+  padding: 0 16px;
+  margin: 0;
+  align-self: flex-start;
+  width: unset;
+  outline: unset;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 4px solid white;
+}
+
+footer > hr {
+  border-radius: 10px;
+  background: #0d151e;
+  width: 134px;
+  height: 5px;
+  margin: 32px auto 8px;
+  border: none;
+}
+
 .btn {
   padding: 12px;
-  border: 1px solid #6070ff;
+  border: 1px solid var(--theme-1-primary-colors-3, #7f8cff);
   box-sizing: border-box;
   border-radius: 8px;
   margin: 12px 0;
@@ -131,20 +228,20 @@ a:active {
 
 .btn:hover,
 .btn:focus {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  background: var(--theme-1-primary-colors-2, #6070ff);
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
   transform: scale(1); /* Resets default link behavior */
 }
 
 .btn:active {
-  background: #2230d2;
+  background: var(--theme-1-primary-colors-1, #2230d2);
 }
 
 .btn:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
+  border: 1px solid var(--theme-1-neutrals-7, #c1c7d0);
+  color: var(--theme-1-neutrals-5, #5e6c84);
 }
 
 /* WORKS Section
@@ -204,7 +301,7 @@ a:active {
 
 /* Circles as chars or codes: ●⚫○ | S \26ac | M \26ab | L \2B24 */
 .project-highlights > div:not(:last-child)::after {
-  content: "●";
+  content: '●';
   color: #c1c7d0;
   font-size: 20px;
   margin: 0 12px;
@@ -324,6 +421,6 @@ a:active {
   margin-right: 16px;
 }
 
-.skill-list input[type="checkbox"] {
+.skill-list input[type='checkbox'] {
   display: none;
 }
