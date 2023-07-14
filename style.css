@@ -92,7 +92,7 @@ h2 {
   display: flex;
   color: #505f79;
   list-style-type: none;
-  
+
 }
 
 /* BUTTON STATES */
@@ -145,6 +145,13 @@ footer > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  transition: font-size 1s ease-in-out;
+}
+
+footer > h2:hover {
+  font-size: 52px;
+  outline: 3px #2230d2;
+  cursor: pointer;
 }
 
 footer > p {
