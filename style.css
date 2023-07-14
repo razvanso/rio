@@ -17,6 +17,10 @@ a {
   transition: size 0.2s ease-in-out;
 }
 
+a:visited {
+  color: var(--neutrals-n-600, #344563);
+}
+
 /* HEADER */
 .toolbar {
   display: flex;
