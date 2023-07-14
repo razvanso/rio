@@ -70,6 +70,11 @@ h2 {
   line-height: 24px;
   margin: 12px 0;
   max-width: 920px;/* based on the Desktop design */
+  transition: color 1s  ease-in-out;
+}
+.headline-text:hover{
+  color: #da1818;
+  cursor: pointer;
 }
 
 /* Social Media section */
@@ -87,6 +92,7 @@ h2 {
   display: flex;
   color: #505f79;
   list-style-type: none;
+  
 }
 
 /* BUTTON STATES */
