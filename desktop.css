@@ -149,6 +149,12 @@ footer {
   padding-bottom: 127px;
 }
 
+footer > p {
+  margin-bottom: 12px;
+  line-height: 28px;
+  padding-bottom: 24px;
+}
+
 footer button.btn {
   align-self: center;
 }
