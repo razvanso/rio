@@ -45,38 +45,6 @@ nav input[type="checkbox"] {
   display: none;
 }
 
-/* MOBILE / SMALL SCREENS */
-@media screen and (max-width: 550px) {
-  /* Hide it in mobile view - separate file, maybe? */
-  #menu {
-    display: none;
-  }
-}
-
-/* DESKTOP / LARGER SCREENS */
-@media screen and (min-width: 550px) {
-  /* Hide the hamburger icon/svg on desktop - also different file */
-  #hamburger {
-    display: none;
-  }
-  /* and style ul to display as a horizontal list with no bullets */
-  #menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px; /* 133.333% */
-  }
-
-  .toolbar {
-    /* padding: 16px 12.39%; */
-    max-width: 1554px;
-    margin: 0 auto;
-  }
-}
-
 /* MAIN PAGE */
 .headline {
   display: flex;
