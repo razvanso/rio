@@ -29,6 +29,32 @@
 
 /* #endregion HERO */
 
+/* #region PORTFOLIO */
+.portfolio {
+  gap: 54px;
+  justify-items: center;
+}
+
+.card-works {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  max-width: 76%;
+}
+
+.card-works > * {
+  flex: 1;
+}
+
+.card-works:nth-last-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.card-details {
+  padding: 24px;
+}
+/* #endregion PORTFOLIO */
+
 /* #region CONTACT */
 footer {
   padding-bottom: 50px;
