@@ -1,10 +1,9 @@
 /* DESKTOP / LARGER SCREENS */
-@media screen and (min-width: 550px) {
-  /* Hide the hamburger icon/svg on desktop - also different file */
+@media screen and (min-width: 23em) {
   #hamburger {
     display: none;
   }
-  /* and style ul to display as a horizontal list with no bullets */
+
   #menu {
     list-style: none;
     display: flex;
@@ -12,11 +11,10 @@
 
     font-size: 15px;
     font-weight: 500;
-    line-height: 20px; /* 133.333% */
+    line-height: 20px;
   }
 
   .toolbar {
-    /* padding: 16px 12.39%; */
     max-width: 1554px;
     margin: 0 auto;
   }

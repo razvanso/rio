@@ -1,6 +1,5 @@
 /* MOBILE / SMALL SCREENS */
-@media screen and (max-width: 550px) {
-  /* Hide it in mobile view - separate file, maybe? */
+@media screen and (max-width: 23em) {
   #menu {
     display: none;
   }
