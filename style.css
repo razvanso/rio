@@ -256,10 +256,11 @@ footer > hr {
 }
 /* #endregion FOOTER */
 
-/* #region WORKS Section */
+/* #region PORTFOLIO Section */
 
 .hidden {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .portfolio {
@@ -351,7 +352,7 @@ footer > hr {
   padding: 4px 12px;
   border-radius: 8px;
 }
-/* #endregion WORKS */
+/* #endregion PORTFOLIO */
 
 /* #region ABOUT */
 .about {
