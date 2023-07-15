@@ -353,6 +353,8 @@ footer > hr {
   list-style-type: none;
   display: flex;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
   gap: 8px;
 }
 
@@ -364,6 +366,7 @@ footer > hr {
   line-height: 16px;
   padding: 4px 12px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
 /* #endregion PORTFOLIO */
