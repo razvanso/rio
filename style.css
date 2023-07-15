@@ -7,53 +7,7 @@
 html {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-}
-
-a {
-  outline: none;
-  border-radius: 8px;
-  display: block;
-  padding: 10px; /* some HitBox space */
-  transition: size 0.2s ease-in-out;
-}
-
-/* HEADER */
-.toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 24px 0 12px;
-  height: 48px;
-}
-
-.logo {
-  padding: 10px 12px;
-}
-
-.toolbar > a {
-  font-size: 18px;
-  font-weight: 700;
-  color: #6070ff;
-}
-
-/* MAIN PAGE */
-.headline {
-  display: flex;
-  flex-direction: column;
-  padding: 114px 24px;
-}
-
-.shapes-bg {
-  background: white url(images/bg-shapes.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  left: -34px; /* accounts for the bg image positioning. Probably: (min-width=376px) {cover+top} */
-  border-bottom-left-radius: 90px;
-}
-
-.rounded-corner-bg {
-  background-color: #f7f7f9;
+  cursor: default;
 }
 
 h1,
@@ -64,32 +18,27 @@ h2 {
   font-weight: 700;
 }
 
-.headline-text {
-  color: #344563;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 12px 0;
-  max-width: 920px;/* based on the Desktop design */
+main {
+  background-color: #f7f7f9;
 }
 
-/* Social Media section */
-.supporting-text {
-  margin: 12px 0;
-  color: #7f8cff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+section {
+  padding: 114px 24px;
 }
 
-.media-icons {
-  /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
-  margin-left: -10px;
-  display: flex;
-  color: #505f79;
-  list-style-type: none;
+/* #region BUTTON STATES */
+
+a {
+  outline: none;
+  border-radius: 8px;
+  display: block;
+  padding: 10px; /* some HitBox space */
+  transition: size 0.2s ease-in-out;
 }
 
-/* BUTTON STATES */
+a:visited {
+  color: var(--neutrals-n-600, #344563);
+}
 
 /* Generic hover effect for all links
   adapted from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
@@ -108,14 +57,114 @@ a:active {
   transform: scale(0.85);
 }
 
-/* FOOTER */
+.btn {
+  padding: 12px;
+  border: 1px solid var(--theme-1-primary-colors-3, #7f8cff);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 12px 0;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  align-self: start;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--theme-1-primary-colors-2, #6070ff);
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+  transform: scale(1); /* Resets default link behavior */
+}
+
+.btn:active {
+  background: var(--theme-1-primary-colors-1, #2230d2);
+}
+
+.btn:disabled {
+  border: 1px solid var(--theme-1-neutrals-7, #c1c7d0);
+  color: var(--theme-1-neutrals-5, #5e6c84);
+}
+
+/* #endregion BUTTON STATES */
+
+/* #region HEADER */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 0 12px;
+  height: 48px;
+}
+
+.logo {
+  padding: 10px 12px;
+}
+
+.toolbar > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+}
+
+/* TOOLBAR MENU */
+nav input[type="checkbox"] {
+  display: none;
+}
+
+/* #endregion HEADER */
+
+/* #region MAIN PAGE */
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 92px;
+  border-bottom-left-radius: 90px;
+}
+
+.hero-bg-shapes {
+  background: white url(images/bg-shapes/hero-bg-shapes-mobile.svg) 0 center no-repeat;
+  background-size: 100vw 100%;
+}
+
+.headline-text {
+  color: #344563;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0;
+  max-width: 920px;/* based on the Desktop design */
+}
+
+/* Social Media section */
+h4 {
+  margin: 12px 0 16px;
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.media-icons,
+#menu {
+  /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
+  margin-left: -10px;
+  display: flex;
+  gap: 8px;
+  color: #505f79;
+  list-style-type: none;
+}
+
+/* #endregion MAIN PAGE */
+
+/* #region FOOTER */
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070ff url(images/contact\ form\ shapes-mobile@2x.svg);
-  background-size: 60%;
-  background-position: top 18px right 0;
-  background-repeat: no-repeat;
   border-top-left-radius: 80px;
   padding: 24px 24px 0;
   color: var(--neutrals-n-0, #fff);
@@ -123,7 +172,7 @@ footer {
 }
 
 footer > * {
-  max-width: 447px;/* based on the Desktop design */
+  max-width: 481px;/* based on the Desktop design */
 }
 
 /* https://stackoverflow.com/questions/20175211/why-dont-textarea-and-input-elements-respect-max-width */
@@ -139,6 +188,7 @@ footer > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  align-self: center;
 }
 
 footer > p {
@@ -148,6 +198,11 @@ footer > p {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 52px;
+}
+
+.contact-bg-shapes {
+  background: #6070ff url(images/bg-shapes/footer-bg-shapes-mobile.svg) right 20% no-repeat;
+  background-size: 59.2% 92%;
 }
 
 /* FORM */
@@ -212,46 +267,16 @@ footer > hr {
   border: none;
 }
 
-.btn {
-  padding: 12px;
-  border: 1px solid var(--theme-1-primary-colors-3, #7f8cff);
-  box-sizing: border-box;
-  border-radius: 8px;
-  margin: 12px 0;
-  color: #396df2;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  align-self: start;
-}
+/* #endregion FOOTER */
 
-.btn:hover,
-.btn:focus {
-  background: var(--theme-1-primary-colors-2, #6070ff);
-  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-  transform: scale(1); /* Resets default link behavior */
-}
-
-.btn:active {
-  background: var(--theme-1-primary-colors-1, #2230d2);
-}
-
-.btn:disabled {
-  border: 1px solid var(--theme-1-neutrals-7, #c1c7d0);
-  color: var(--theme-1-neutrals-5, #5e6c84);
-}
-
-/* WORKS Section
-   =========================================== */
+/* #region PORTFOLIO Section */
 
 .hidden {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
-.works {
+.portfolio {
   display: grid;
   grid-template: auto / 1fr;
   background-color: #f7f7f9;
@@ -328,6 +353,7 @@ footer > hr {
   list-style-type: none;
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -339,13 +365,16 @@ footer > hr {
   line-height: 16px;
   padding: 4px 12px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
-/* ABOUT */
+/* #endregion PORTFOLIO */
 
+/* #region ABOUT */
 .about {
   background-color: white;
   border-top-right-radius: 90px;
+  border-bottom-left-radius: 0;
 }
 
 /* SKILLS LIST
@@ -424,3 +453,5 @@ footer > hr {
 .skill-list input[type='checkbox'] {
   display: none;
 }
+
+/* #endregion ABOUT */

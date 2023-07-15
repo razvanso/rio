@@ -1,0 +1,8 @@
+/* MOBILE / SMALL SCREENS */
+#menu {
+  display: none;
+}
+
+.about .headline {
+  padding-bottom: 0;
+}

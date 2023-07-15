@@ -56,6 +56,8 @@
 - **[Linters]**
 - **[GitHub Actions]**
 - **[Thorough Documentation]**
+- **[Contact form]** (while pair programming)
+- **[Mobile version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,8 +116,9 @@ To run the testing script, which shouts if we fell out of conformance with Micro
 
 ## 🔭 Future Features<a name="future-features"></a>
 
-- [ ] **[Deploy to GitHub Pages]**
-- [ ] **[Add "by Rio" signature]** - in a lack of inspiration, just add something to the HTML file 😼
+- [ ] Deploy to GitHub
+- [ ] Accessibility
+- [ ] Mobile menu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
