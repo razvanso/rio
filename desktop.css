@@ -36,22 +36,26 @@
 }
 
 .card-works {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "image details";
   gap: 22px;
-  max-width: 76%;
+  width: 76%;
 }
 
-.card-works > * {
-  flex: 1;
-}
-
-.card-works:nth-last-of-type(even) {
-  flex-direction: row-reverse;
+.card-image {
+  grid-area: image;
+  height: 100%;
+  object-fit: contain;
 }
 
 .card-details {
+  grid-area: details;
   padding: 24px;
+}
+
+.card-works:nth-of-type(even) {
+  grid-template-areas: "details image";
 }
 /* #endregion PORTFOLIO */
 
