@@ -1,6 +1,8 @@
 /* MOBILE / SMALL SCREENS */
-@media screen and (max-width: 23em) {
-  #menu {
-    display: none;
-  }
+#menu {
+  display: none;
+}
+
+.about .headline {
+  padding-bottom: 0;
 }

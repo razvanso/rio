@@ -1,21 +1,53 @@
 /* DESKTOP / LARGER SCREENS */
-@media screen and (min-width: 23em) {
-  #hamburger {
-    display: none;
-  }
-
-  #menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px;
-  }
-
-  .toolbar {
-    max-width: 1554px;
-    margin: 0 auto;
-  }
+#hamburger {
+  display: none;
 }
+
+/* #region HERO */
+.hero {
+  padding: 20% 18%;
+}
+
+.hero h1 {
+  padding-top: 72px;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: 0.37px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hero-bg-shapes {
+  background: white url(images/bg-shapes/hero-bg-shapes-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 97.04% 85.28%;
+  background-position: 35px;
+}
+
+/* #endregion HERO */
+
+/* #region CONTACT */
+footer {
+  padding-bottom: 50px;
+}
+
+footer button {
+  align-self: center;
+}
+
+footer > hr {
+  display: none;
+  height: 0;
+}
+
+.contact-bg-shapes {
+  background: #6070ff url(images/bg-shapes/footer-bg-shapes-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 89.63% 85.28%;
+  background-position: 30px 70px;
+}
+
+/* #endregion CONTACT */

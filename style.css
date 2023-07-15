@@ -16,12 +16,21 @@ h2 {
   line-height: 52px;
   font-weight: 700;
 }
+
+main {
+  background-color: #f7f7f9;
+}
+
+section {
+  padding: 114px 24px;
+}
+
 /* #region HEADER */
 .toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 24px 0 12px;
+  padding: 0 24px 0 12px;
   height: 48px;
 }
 
@@ -39,26 +48,20 @@ h2 {
 nav input[type="checkbox"] {
   display: none;
 }
+
 /* #endregion HEADER */
 
 /* #region MAIN PAGE */
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 114px 24px;
-}
-
-.shapes-bg {
-  background: white url(images/bg-shapes.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  left: -34px; /* accounts for the bg image positioning. Probably: (min-width=376px) {cover+top} */
+  padding-bottom: 92px;
   border-bottom-left-radius: 90px;
 }
 
-.rounded-corner-bg {
-  background-color: #f7f7f9;
+.hero-bg-shapes {
+  background: white url(images/bg-shapes/hero-bg-shapes-mobile.svg) 0 center no-repeat;
+  background-size: 100vw 100%;
 }
 
 .headline-text {
@@ -78,13 +81,15 @@ nav input[type="checkbox"] {
   line-height: 24px;
 }
 
-.media-icons {
+.media-icons,
+#menu {
   /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
   margin-left: -10px;
   display: flex;
   color: #505f79;
   list-style-type: none;
 }
+
 /* #endregion MAIN PAGE */
 
 /* #region BUTTON STATES */
@@ -149,13 +154,14 @@ a:active {
   border: 1px solid var(--theme-1-neutrals-7, #c1c7d0);
   color: var(--theme-1-neutrals-5, #5e6c84);
 }
+
 /* #endregion BUTTON STATES */
 
 /* #region FOOTER */
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070ff url(images/contact-form-shapes-mobile.svg);
+  background: #6070ff url(images/bg-shapes/footer-bg-shapes-mobile.svg);
   background-size: 60%;
   background-position: top 18px right 0;
   background-repeat: no-repeat;
@@ -182,6 +188,7 @@ footer > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  align-self: center;
 }
 
 footer > p {
@@ -191,6 +198,11 @@ footer > p {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 52px;
+}
+
+.contact-bg-shapes {
+  background: #6070ff url(images/bg-shapes/footer-bg-shapes-mobile.svg) right 20% no-repeat;
+  background-size: 59.2% 92%;
 }
 
 /* FORM */
@@ -254,6 +266,7 @@ footer > hr {
   margin: 32px auto 8px;
   border: none;
 }
+
 /* #endregion FOOTER */
 
 /* #region PORTFOLIO Section */
@@ -352,12 +365,14 @@ footer > hr {
   padding: 4px 12px;
   border-radius: 8px;
 }
+
 /* #endregion PORTFOLIO */
 
 /* #region ABOUT */
 .about {
   background-color: white;
   border-top-right-radius: 90px;
+  border-bottom-left-radius: 0;
 }
 
 /* SKILLS LIST
@@ -436,4 +451,5 @@ footer > hr {
 .skill-list input[type='checkbox'] {
   display: none;
 }
+
 /* #endregion ABOUT */
