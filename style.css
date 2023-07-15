@@ -357,8 +357,7 @@ footer > hr {
   list-style-type: none;
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
