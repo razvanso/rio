@@ -67,6 +67,7 @@
 .card-details {
   grid-area: details;
   padding: 24px;
+  gap: 24px;
 }
 
 .card-works:nth-of-type(even) {
