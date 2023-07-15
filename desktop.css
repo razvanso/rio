@@ -102,10 +102,10 @@
 
 /* #region CONTACT */
 footer {
-  padding-bottom: 50px;
+  padding-bottom: 127px;
 }
 
-footer button {
+footer button.btn {
   align-self: center;
 }
 
