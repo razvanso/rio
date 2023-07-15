@@ -7,6 +7,15 @@
   padding: 1rem 10%;
 }
 
+#menu li {
+  color: var(--neutrals-n-600, #344563);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 12px;
+}
+
 /* #region HERO */
 .hero {
   padding: 20% 18%;
