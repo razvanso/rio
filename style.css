@@ -298,6 +298,12 @@ footer > hr {
   line-height: 44px;
   margin: 12px 0;
   color: #172b4d;
+  transition: color 1s ease-in-out;
+}
+
+.project-title {
+  color: crimson;
+  cursor: pointer;
 }
 
 .project-highlights {
