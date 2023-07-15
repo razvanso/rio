@@ -80,6 +80,14 @@
   filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
 }
 
+.project-title {
+  color: var(--theme-1-neutrals-1, #091E42);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 130% */
+}
+
 /* #endregion PORTFOLIO */
 
 /* #region ABOUT */
