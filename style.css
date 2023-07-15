@@ -165,10 +165,6 @@ h4 {
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070ff url(images/bg-shapes/footer-bg-shapes-mobile.svg);
-  background-size: 60%;
-  background-position: top 18px right 0;
-  background-repeat: no-repeat;
   border-top-left-radius: 80px;
   padding: 24px 24px 0;
   color: var(--neutrals-n-0, #fff);
