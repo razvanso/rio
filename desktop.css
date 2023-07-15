@@ -3,6 +3,10 @@
   display: none;
 }
 
+.toolbar {
+  padding: 1rem 10%;
+}
+
 /* #region HERO */
 .hero {
   padding: 20% 18%;
