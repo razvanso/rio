@@ -176,7 +176,7 @@ footer {
 }
 
 footer > * {
-  max-width: 447px;/* based on the Desktop design */
+  max-width: 481px;/* based on the Desktop design */
 }
 
 /* https://stackoverflow.com/questions/20175211/why-dont-textarea-and-input-elements-respect-max-width */

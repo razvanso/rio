@@ -149,6 +149,11 @@ footer {
   padding-bottom: 127px;
 }
 
+#contact-form input,
+#contact-form textarea {
+  border-radius: 2px;
+}
+
 footer > p {
   margin-bottom: 12px;
   line-height: 28px;
