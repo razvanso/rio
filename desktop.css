@@ -54,6 +54,8 @@
   grid-template-areas: "image details";
   gap: 22px;
   width: 76%;
+  border-radius: 24px;
+  padding: 24px 22px 24px 24px;
 }
 
 .card-image {
@@ -69,6 +71,7 @@
 
 .card-works:nth-of-type(even) {
   grid-template-areas: "details image";
+  /* padding: 24px 24px 24px 22px; */
 }
 
 .card-works:hover {
