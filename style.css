@@ -156,7 +156,7 @@ a:active {
 footer {
   display: flex;
   flex-direction: column;
-  background: #6070ff url(images/contact\ form\ shapes-mobile@2x.svg);
+  background: #6070ff url(images/contact-form-shapes-mobile.svg);
   background-size: 60%;
   background-position: top 18px right 0;
   background-repeat: no-repeat;
