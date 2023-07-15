@@ -88,6 +88,19 @@
   line-height: 52px; /* 130% */
 }
 
+.project-highlights {
+  font-size: 18px;
+  color: var(--theme-1-neutrals-6, #6B778C);
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.project-client {
+  color: var(--theme-1-neutrals-3, #344563);
+  font-weight: 500;
+  text-transform: unset;
+}
+
 /* #endregion PORTFOLIO */
 
 /* #region ABOUT */
