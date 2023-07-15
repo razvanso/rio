@@ -263,7 +263,7 @@ footer > hr {
   display: none;
 }
 
-.works {
+.portfolio {
   display: grid;
   grid-template: auto / 1fr;
   background-color: #f7f7f9;
