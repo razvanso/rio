@@ -70,6 +70,12 @@ h2 {
   line-height: 24px;
   margin: 12px 0;
   max-width: 920px;/* based on the Desktop design */
+  transition: color 1s  ease-in-out;
+}
+
+.headline-text:hover {
+  color: #da1818;
+  cursor: pointer;
 }
 
 /* Social Media section */
@@ -139,6 +145,13 @@ footer > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  transition: font-size 1s ease-in-out;
+}
+
+footer > h2:hover {
+  font-size: 52px;
+  outline: 3px #2230d2;
+  cursor: pointer;
 }
 
 footer > p {
@@ -285,6 +298,12 @@ footer > hr {
   line-height: 44px;
   margin: 12px 0;
   color: #172b4d;
+  transition: color 1s ease-in-out;
+}
+
+.project-title {
+  color: crimson;
+  cursor: pointer;
 }
 
 .project-highlights {
