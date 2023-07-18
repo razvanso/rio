@@ -229,9 +229,6 @@ a:active {
 
 .project-tags {
   list-style-type: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .project-tags li {
@@ -242,6 +239,7 @@ a:active {
   line-height: 16px;
   padding: 4px 12px;
   border-radius: 8px;
+  float: left;
 }
 
 /* ABOUT */
